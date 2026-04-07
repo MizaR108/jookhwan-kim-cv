@@ -127,6 +127,16 @@
       display: inline-block; background: #fff3cd; border: 1px solid #ffc107;
       border-radius: 3px; padding: 0 6px; font-size: .72rem; font-family: sans-serif; color: #856404;
     }
+    .pub-q1 {
+      display: inline-block; background: #e8f4ea; border: 1px solid #a8d5b0;
+      border-radius: 3px; padding: 0 6px; font-size: .72rem; font-family: sans-serif;
+      color: #2a7a3b; font-weight: 600; margin-left: 3px;
+    }
+    .pub-top5 {
+      display: inline-block; background: #fef3e2; border: 1px solid #f5c07a;
+      border-radius: 3px; padding: 0 6px; font-size: .72rem; font-family: sans-serif;
+      color: #c47c10; font-weight: 600; margin-left: 3px;
+    }
 
     /* ── 학회 발표 ── */
     .conf-item { font-size: .82rem; margin-bottom: 8px; padding-left: 14px; position: relative; line-height: 1.6; }
@@ -235,22 +245,30 @@
     <!-- 논문 통계 -->
     <div class="card">
       <h2>연구 성과 요약</h2>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;text-align:center;">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;text-align:center;">
         <div style="background:var(--light);border-radius:6px;padding:10px 4px;">
-          <div style="font-size:1.5rem;font-weight:bold;color:var(--primary);">28</div>
-          <div style="font-size:.72rem;color:var(--muted);font-family:sans-serif;">총 논문수</div>
+          <div style="font-size:1.5rem;font-weight:bold;color:var(--primary);">27</div>
+          <div style="font-size:.7rem;color:var(--muted);font-family:sans-serif;">총 논문수 (출판)</div>
         </div>
         <div style="background:var(--light);border-radius:6px;padding:10px 4px;">
-          <div style="font-size:1.5rem;font-weight:bold;color:var(--accent);">10</div>
-          <div style="font-size:.72rem;color:var(--muted);font-family:sans-serif;">제1저자</div>
+          <div style="font-size:1.5rem;font-weight:bold;color:var(--accent);">9</div>
+          <div style="font-size:.7rem;color:var(--muted);font-family:sans-serif;">제1저자</div>
+        </div>
+        <div style="background:#e8f4ea;border-radius:6px;padding:10px 4px;border:1px solid #a8d5b0;">
+          <div style="font-size:1.5rem;font-weight:bold;color:#2a7a3b;">19</div>
+          <div style="font-size:.7rem;color:#4a8a5a;font-family:sans-serif;font-weight:600;">Q1 논문 (상위 25%)</div>
+        </div>
+        <div style="background:#fef3e2;border-radius:6px;padding:10px 4px;border:1px solid #f5c07a;">
+          <div style="font-size:1.5rem;font-weight:bold;color:#c47c10;">6</div>
+          <div style="font-size:.7rem;color:#b06a00;font-family:sans-serif;font-weight:600;">분야 상위 5%</div>
         </div>
         <div style="background:var(--light);border-radius:6px;padding:10px 4px;">
-          <div style="font-size:1.5rem;font-weight:bold;color:var(--primary);">11.3</div>
-          <div style="font-size:.72rem;color:var(--muted);font-family:sans-serif;">최고 IF</div>
+          <div style="font-size:1.5rem;font-weight:bold;color:var(--primary);">8.2</div>
+          <div style="font-size:.7rem;color:var(--muted);font-family:sans-serif;">최고 IF</div>
         </div>
         <div style="background:var(--light);border-radius:6px;padding:10px 4px;">
           <div style="font-size:1.5rem;font-weight:bold;color:var(--accent);">14</div>
-          <div style="font-size:.72rem;color:var(--muted);font-family:sans-serif;">국제학회 발표</div>
+          <div style="font-size:.7rem;color:var(--muted);font-family:sans-serif;">국제학회 발표</div>
         </div>
       </div>
     </div>
@@ -267,8 +285,10 @@
         분자생태학 및 생물정보학 기반의 해양 미생물·미세조류 연구를 수행하고 있습니다.
         유해 조류 발생(HAB) 기작, 미세조류-마이크로바이옴 상호작용(Phylosymbiosis),
         그리고 휴면포자를 포함한 생활사 연구를 중점으로 하며, AI와 분자 기법을 결합한
-        환경 모니터링 기법 개발에도 관심을 갖고 있습니다. 2026년부터 한양대학교 생명과학과
-        연구부교수로 재직 중이며, 한국연구재단 세종과학펠로우십을 수혜하고 있습니다.
+        환경 모니터링 기법 개발에도 관심을 갖고 있습니다.
+        2019년부터 2026년까지는 한강유역환경청 및 환경부에서 주무관으로 재직하며
+        수질 관리, 물이용 정책 수립, 생활하수 행정 등 물 환경 전반의 실무 경험을 쌓았습니다.
+        2026년부터 한양대학교 생명과학과 연구부교수로 재직 중이며, 한국연구재단 세종과학펠로우십을 수혜하고 있습니다.
       </p>
     </div>
 
@@ -348,70 +368,260 @@
 
     <!-- 논문 -->
     <div class="card">
-      <h2>주요 연구논문</h2>
+      <h2>연구논문 전체 목록 <span style="font-size:.72rem;color:var(--muted);font-family:sans-serif;font-weight:400;">(2026.04 기준 · †공동제1저자)</span></h2>
 
-      <p class="sub-title">제1저자 / 교신저자 (최근 순)</p>
+      <p class="sub-title">Under Review</p>
 
       <div class="pub-item first-author">
+        <span style="font-size:.72rem;font-family:sans-serif;background:#e8e8ff;border:1px solid #aaaae8;border-radius:3px;padding:0 6px;color:#3a3a9a;margin-right:4px;">Under Review</span>
         <strong>Kim, J.-H.</strong>, Kim, E.S., Kim, J.W., Yun, N., Koo, J., Kim, J., Park, T.-G., Youn, S.H., &amp; Park, B.S.
         Core microbiota drives host-specific growth enhancement: evidence in a harmful algal bloom causing dinoflagellate <em>Prorocentrum lima</em>.
         <span class="pub-journal">Environmental Science &amp; Technology</span>
         <span class="pub-if">IF 11.3</span>
-        <span class="pub-badge">Top 5.4% · In Revision</span>
+        <span class="pub-q1">Q1</span>
+        <span class="pub-top5">분야 상위 5.4%</span>
       </div>
 
+      <p class="sub-title" style="margin-top:16px;">제1저자 / 공동제1저자</p>
+
       <div class="pub-item first-author">
-        Park, R.†, <strong>Kim, J.-H.†</strong>, Kim, J.H., Kim, S.H., Shin, H.H., Han, M.S., &amp; Park, B.S. (2025).
+        Park, R.<sup>†</sup>, <strong>Kim, J.-H.<sup>†</sup></strong>, Kim, J.H., Kim, S.H., Shin, H.H., Han, M.S., &amp; Park, B.S. <strong>(2025)</strong>.
         Growth enhancement of harmful dinoflagellate <em>Prorocentrum cordatum</em> by bacterial community shifts driven by dissolved organic matter derived from raphidophyte <em>Heterosigma akashiwo</em>.
         <span class="pub-journal">Harmful Algae</span>, 102895.
         <span class="pub-if">IF 4.5</span>
-        <span class="pub-badge">Top 3.8%</span>
+        <span class="pub-q1">Q1</span>
+        <span class="pub-top5">분야 상위 3.8%</span>
       </div>
 
       <div class="pub-item first-author">
-        <strong>Kim, J.-H.†</strong>, Kim, J.H.†, Kim, S.H., Kang, Y.H., Lee, J., Joo, J.H., ... &amp; Park, B.S. (2024).
+        Kim, S.H.<sup>†</sup>, Kim, J.H.<sup>†</sup>, <strong>Kim, J.-H.<sup>†</sup></strong>, Wang, P., Park, T.G., Park, S., ... &amp; Park, B.S. <strong>(2024)</strong>.
+        Ambivalent effects of mass cultivation of biodiesel producible green alga <em>Tetraselmis striata</em> on a microbial ecosystem: Evidence from mesocosm experiments.
+        <span class="pub-journal">Algal Research</span>, 103735.
+        <span class="pub-if">IF 4.6</span>
+        <span class="pub-q1">Q1</span>
+        <span class="pub-badge">분야 상위 17.5%</span>
+      </div>
+
+      <div class="pub-item first-author">
+        <strong>Kim, J.-H.<sup>†</sup></strong>, Kim, J.H.<sup>†</sup>, Kim, S.H., Kang, Y.H., Lee, J., Joo, J.H., ... &amp; Park, B.S. <strong>(2024)</strong>.
         The impact of sexual reproduction-induced vertical migration on the complexity of harmful algal blooms in <em>Heterosigma akashiwo</em>.
         <span class="pub-journal">Environmental Research</span>, 258, 119437.
         <span class="pub-if">IF 7.7</span>
-        <span class="pub-badge">Top 4.2%</span>
+        <span class="pub-q1">Q1</span>
+        <span class="pub-top5">분야 상위 4.2%</span>
       </div>
 
       <div class="pub-item first-author">
-        <strong>Kim, J.-H.</strong>, Park, B.S., &amp; Kim, J.H. (2023).
+        장지연<sup>†</sup>, <strong>김주환<sup>†</sup></strong>, 정도윤, 강수민, 왕욱, 최윤형, 이준백, 임영균, 백승호, 김진호 <strong>(2024)</strong>.
+        2022년 춘계에서 하계 제주 연안의 해양 물리화학적 특성 및 식물플랑크톤 출현 변동.
+        <span class="pub-journal">Ocean &amp; Polar Research</span>, 46(2), 105–121.
+        <span class="pub-if" style="background:#f0e8fa;border-color:#c0a0e0;color:#5a3a8a;">SCOPUS</span>
+      </div>
+
+      <div class="pub-item first-author">
+        <strong>Kim, J.-H.</strong>, Park, B.S., &amp; Kim, J.H. <strong>(2023)</strong>.
         Comprehensive understanding of the life history of harmful raphidophyte <em>Heterosigma akashiwo</em>: Integrating in situ and in vitro observations.
         <span class="pub-journal">Harmful Algae</span>, 129, 102521.
         <span class="pub-if">IF 6.6</span>
-        <span class="pub-badge">Top 1.4%</span>
+        <span class="pub-q1">Q1</span>
+        <span class="pub-top5">분야 상위 1.4%</span>
       </div>
 
       <div class="pub-item first-author">
-        <strong>Kim, J.-H.</strong>, Tillmann, U., Adams, N.G., Krock, B., Stutts, W.L., Deeds, J.R., Han, M.-S., Trainer, V.L. (2017).
+        Kim, J.H.<sup>†</sup>, <strong>Kim, J.-H.<sup>†</sup></strong>, Park, B.S., Wang, P., Patidar, S.K., Han, M.-S. <strong>(2017)</strong>.
+        Development of a qPCR assay for tracking the ecological niches of genetic sub-populations within <em>Pseudo-nitzschia pungens</em> (Bacillariophyceae).
+        <span class="pub-journal">Harmful Algae</span>, 63, 68–78.
+        <span class="pub-if">IF 3.087</span>
+        <span class="pub-q1">Q1</span>
+        <span class="pub-badge">분야 상위 10.0%</span>
+      </div>
+
+      <div class="pub-item first-author">
+        <strong>Kim, J.-H.</strong>, Tillmann, U., Adams, N.G., Krock, B., Stutts, W.L., Deeds, J.R., Han, M.-S., Trainer, V.L. <strong>(2017)</strong>.
         Identification of <em>Azadinium</em> species and a new azaspiracid from <em>Azadinium poporum</em> in Puget Sound, Washington State, USA.
         <span class="pub-journal">Harmful Algae</span>, 68, 152–167.
         <span class="pub-if">IF 3.087</span>
+        <span class="pub-q1">Q1</span>
+        <span class="pub-badge">분야 상위 10.0%</span>
       </div>
 
-      <p class="sub-title" style="margin-top:18px;">공저자 (선택)</p>
+      <div class="pub-item first-author">
+        <strong>Kim, J.-H.</strong>, Park, B.S., Wang, P., Kim, J.H., Youn, S.H., Han, M.-S. <strong>(2015)</strong>.
+        Cyst morphology and germination in <em>Heterosigma akashiwo</em> (Raphidophyceae).
+        <span class="pub-journal">Phycologia</span>, 54, 435–9.
+        <span class="pub-if">IF 1.915</span>
+        <span class="pub-badge">분야 상위 33.5%</span>
+      </div>
+
+      <div class="pub-item first-author">
+        <strong>Kim, J.-H.</strong>, Kim, J.H.<sup>†</sup>, Wang, P.<sup>†</sup>, Park, B.S., Han, M.-S. <strong>(2015)</strong>.
+        An improved quantitative real-time PCR assay for the enumeration of <em>Heterosigma akashiwo</em> (Raphidophyceae) cysts using a DNA debris removal method and a cyst-based standard curve.
+        <span class="pub-journal">PLoS One</span>, 11(1), e0145712.
+        <span class="pub-if">IF 3.057</span>
+        <span class="pub-q1">Q1</span>
+        <span class="pub-badge">분야 상위 16.7%</span>
+      </div>
+
+      <p class="sub-title" style="margin-top:16px;">공저자</p>
 
       <div class="pub-item">
-        Kang, S., Kim, K.H., Shin, H.H., <strong>Kim, J.-H.</strong>, Kim, B.H., &amp; Li, Z. (2025).
+        Choi, D.B., Jeong, M., Li, Z., Han, K.H., Kim, M., Jang, P.-G., Woo, J.-E., Youn, J.Y., Park, B.S., Kim, J.H., <strong>Kim, J.-H.</strong>, &amp; Shin, H.H. <strong>(2026)</strong>.
+        First record of <em>Pseudadenoides kofoidii</em>, a marine sand-dwelling dinoflagellate, from Geoje Island, Korea.
+        <span class="pub-journal">Algae</span>.
+        <span class="pub-if">IF 2.4</span>
+        <span class="pub-q1">Q1</span>
+        <span class="pub-badge">분야 상위 23.7%</span>
+      </div>
+
+      <div class="pub-item">
+        Kang, S.-M., Kim, T., Ki, J.-S., Lee, J.-B., <strong>Kim, J.-H.</strong>, Ajani, P.A., Murray, S.A., Wang, X., &amp; Kim, J.H. <strong>(2026)</strong>.
+        Morphology and molecular phylogenetics of the marine sand-dwelling dinoflagellate <em>Paramphidinium jejuensis</em> gen. et sp. nov. (Dinophyceae).
+        <span class="pub-journal">European Journal of Phycology</span>.
+        <span class="pub-if">IF 1.7</span>
+        <span class="pub-badge">분야 상위 46.7%</span>
+      </div>
+
+      <div class="pub-item">
+        Kang, S., Kim, K.H., Shin, H.H., <strong>Kim, J.-H.</strong>, Kim, B.H., &amp; Li, Z. <strong>(2025)</strong>.
         Nitrogen excess induces cytokinesis arrest and alters lipid metabolism in the bloom-forming desmid <em>Cosmarium tinctum</em>.
         <span class="pub-journal">Water Research X</span>, 100394.
         <span class="pub-if">IF 8.2</span>
-        <span class="pub-badge">Top 4.2%</span>
+        <span class="pub-q1">Q1</span>
+        <span class="pub-top5">분야 상위 4.2%</span>
       </div>
 
       <div class="pub-item">
-        Park, B.S., Kim, S., <strong>Kim, J.-H.</strong>, Kim, J.H., &amp; Han, M.S. (2019).
-        Dynamics of <em>Amoebophrya</em> parasites during recurrent blooms of <em>Cochlodinium polykrikoides</em> in Korean coastal waters.
-        <span class="pub-journal">Harmful Algae</span>, 84, 119–126.
-        <span class="pub-if">IF 5.012</span>
-        <span class="pub-badge">Top 2.3%</span>
+        Sung, J., Choi, D.H., Lee, Y., <strong>Kim, J.-H.</strong>, Shin, H.H., Kim, Y.-E., Noh, J.H., Gobler, C.J., &amp; Park, B.S. <strong>(2025)</strong>.
+        Temperature-driven intraspecific diversity in paralytic shellfish toxin profiles of the dinoflagellate <em>Alexandrium pacificum</em>.
+        <span class="pub-journal">Microbial Ecology</span>, 88, 87.
+        <span class="pub-if">IF 4.0</span>
+        <span class="pub-q1">Q1</span>
+        <span class="pub-badge">분야 상위 6.3%</span>
       </div>
 
-      <p style="font-size:.76rem;color:var(--muted);margin-top:10px;font-family:sans-serif;">
-        ※ 국제학술지(SCIE/SCOPUS) 총 28편 (제1저자 10편, 공저자 18편) · 2026.04 기준
-        &nbsp;|&nbsp; <a href="https://scholar.google.com/citations?hl=ko&user=74LirFIAAAAJ" target="_blank" style="color:var(--accent);">Google Scholar에서 전체 목록 보기 ↗</a>
+      <div class="pub-item">
+        Kim, J.Y., <strong>Kim, J.-H.</strong>, Li, Z., Han, K.H., Kim, M., Jeong, M., ... &amp; Shin, H.H. <strong>(2025)</strong>.
+        Effects of combined temperature and salinity on growth and fatty acid content of two Korean isolates of <em>Akashiwo sanguinea</em> (Dinophyceae).
+        <span class="pub-journal">Scientific Reports</span>, 15(1), 26904.
+        <span class="pub-if">IF 3.9</span>
+        <span class="pub-q1">Q1</span>
+        <span class="pub-badge">분야 상위 18.1%</span>
+      </div>
+
+      <div class="pub-item">
+        Han, K.H., Li, Z., Park, B.S., Jung, M.S., Kim, M., Kwon, K.K., ... &amp; Shin, H.H. <strong>(2025)</strong>.
+        Exploration of a cultivation strategy to improve eicosapentaenoic acid (EPA) production and growth of a Korean strain of <em>Nannochloropsis oceanica</em>.
+        <span class="pub-journal">Biotechnology for Biofuels and Bioproducts</span>, 18(1), 1–15.
+        <span class="pub-if">IF 4.6</span>
+        <span class="pub-q1">Q1</span>
+        <span class="pub-badge">분야 상위 18.9%</span>
+      </div>
+
+      <div class="pub-item">
+        Kim, J.H., Ajani, P., Murray, S.A., <strong>Kim, J.-H.</strong>, Lim, H.C., Teng, S.T., ... &amp; Park, B.S. <strong>(2020)</strong>.
+        Sexual reproduction and genetic polymorphism within the cosmopolitan marine diatom <em>Pseudo-nitzschia pungens</em>.
+        <span class="pub-journal">Scientific Reports</span>, 10(1), 1–13.
+        <span class="pub-if">IF 3.998</span>
+        <span class="pub-q1">Q1</span>
+        <span class="pub-badge">분야 상위 23.2%</span>
+      </div>
+
+      <div class="pub-item">
+        Kim, S.H., Kim, J.H., Baek, S.H., <strong>Kim, J.-H.</strong>, Ajani, P.A., Park, B.S., &amp; Han, M.S. <strong>(2020)</strong>.
+        The influence of dissolved organic carbon on the microbial community associated with <em>Tetraselmis striata</em> for bio-diesel production.
+        <span class="pub-journal">Applied Sciences</span>, 10(10), 3601.
+        <span class="pub-if">IF 2.474</span>
+        <span class="pub-badge">분야 상위 34.6%</span>
+      </div>
+
+      <div class="pub-item">
+        Park, B.S., Kim, S., <strong>Kim, J.-H.</strong>, Kim, J.H., &amp; Han, M.S. <strong>(2019)</strong>.
+        Dynamics of <em>Amoebophrya</em> parasites during recurrent blooms of the ichthyotoxic dinoflagellate <em>Cochlodinium polykrikoides</em> in Korean coastal waters.
+        <span class="pub-journal">Harmful Algae</span>, 84, 119–126.
+        <span class="pub-if">IF 5.012</span>
+        <span class="pub-q1">Q1</span>
+        <span class="pub-top5">분야 상위 2.3%</span>
+      </div>
+
+      <div class="pub-item">
+        Choi, H.J., Joo, J.-H., <strong>Kim, J.-H.</strong>, Wang, P., Ki, J.-S., Han, M.-S. <strong>(2018)</strong>.
+        Morphological characterization and molecular phylogenetic analysis of <em>Dolichospermum hangangense</em> (Nostocales, Cyanobacteria) sp. nov. from Han River, Korea.
+        <span class="pub-journal">Algae</span>, 33(2), 143–156.
+        <span class="pub-if">IF 1.556</span>
+        <span class="pub-badge">분야 상위 48.6%</span>
+      </div>
+
+      <div class="pub-item">
+        Kim, J.H., Wang, P., Park, B.S., <strong>Kim, J.-H.</strong>, Patidar, S.K., Han, M.-S. <strong>(2018)</strong>.
+        Revealing the distinct habitat ranges and hybrid zone of genetic sub-populations within <em>Pseudo-nitzschia pungens</em> in the West Pacific area.
+        <span class="pub-journal">Harmful Algae</span>, 73, 72–83.
+        <span class="pub-if">IF 4.138</span>
+        <span class="pub-q1">Q1</span>
+        <span class="pub-top5">분야 상위 4.9%</span>
+      </div>
+
+      <div class="pub-item">
+        Park, B.S., Kim, J.H., <strong>Kim, J.-H.</strong>, Baek, S.H., Han, M.-S. <strong>(2018)</strong>.
+        Intraspecific bloom succession in the harmful dinoflagellate <em>Cochlodinium polykrikoides</em> extended the blooming period in Korean coastal waters in 2009.
+        <span class="pub-journal">Harmful Algae</span>, 71, 78–88.
+        <span class="pub-if">IF 4.138</span>
+        <span class="pub-q1">Q1</span>
+        <span class="pub-top5">분야 상위 4.9%</span>
+      </div>
+
+      <div class="pub-item">
+        Wang, P., Joo, J.-H., Park, B.S., <strong>Kim, J.-H.</strong>, Kim, J.H., Han, M.-S. <strong>(2017)</strong>.
+        Relationship between dissolved organic carbon and bacterial community in the coastal waters of Incheon, Korea.
+        <span class="pub-journal">Oceanol. Hydrobiol. Stud.</span>, 46(1), 50–61.
+        <span class="pub-if">IF 0.544</span>
+        <span class="pub-badge">분야 상위 86.5%</span>
+      </div>
+
+      <div class="pub-item">
+        Han, M.-S., Wang, P., Kim, J.H., Cho, S.-Y., Park, B.S., <strong>Kim, J.-H.</strong>, Katano, T., Kim, B.-H. <strong>(2016)</strong>.
+        Morphological and molecular phylogenetic position of <em>Prorocentrum micans</em> sensu stricto and description of <em>Prorocentrum koreanum</em> sp. nov.
+        <span class="pub-journal">Protist</span>, 167(1), 32–50.
+        <span class="pub-if">IF 2.898</span>
+        <span class="pub-badge">분야 상위 39.4%</span>
+      </div>
+
+      <div class="pub-item">
+        Park, B.S., <strong>Kim, J.-H.</strong>, Kim, J.H., Gobler, C.J., Baek, S.H., Han, M.-S. <strong>(2015)</strong>.
+        Dynamics of bacterial community structure during blooms of <em>Cochlodinium polykrikoides</em> (Gymnodiniales, Dinophyceae) in Korean coastal waters.
+        <span class="pub-journal">Harmful Algae</span>, 48, 44–54.
+        <span class="pub-if">IF 3.874</span>
+        <span class="pub-q1">Q1</span>
+        <span class="pub-top5">분야 상위 2.4%</span>
+      </div>
+
+      <div class="pub-item">
+        Kim, J.H., Park, B.S., <strong>Kim, J.-H.</strong>, Wang, P., Han, M.-S. <strong>(2015)</strong>.
+        Intraspecific diversity and distribution of the cosmopolitan species <em>Pseudo-nitzschia pungens</em> (Bacillariophyceae).
+        <span class="pub-journal">Journal of Phycology</span>, 51, 159–172.
+        <span class="pub-if">IF 2.844</span>
+        <span class="pub-q1">Q1</span>
+        <span class="pub-badge">분야 상위 10.2%</span>
+      </div>
+
+      <div class="pub-item">
+        Wang, P., Park, B.S., Kim, J.H., <strong>Kim, J.-H.</strong>, Lee, H.-O., Han, M.-S. <strong>(2014)</strong>.
+        Phylogenetic position of eight <em>Amphora</em> sensu lato (Bacillariophyceae) species and comparative analysis of morphological characteristics.
+        <span class="pub-journal">Algae</span>, 29, 57–73.
+        <span class="pub-if">IF 1.361</span>
+        <span class="pub-badge">분야 상위 50.3%</span>
+      </div>
+
+      <div class="pub-item">
+        Park, B.S., Wang, P., Kim, J.H., <strong>Kim, J.-H.</strong>, Gobler, C.J., Han, M.-S. <strong>(2014)</strong>.
+        Resolving the intra-specific succession within <em>Cochlodinium polykrikoides</em> populations in southern Korean coastal waters via use of quantitative PCR assays.
+        <span class="pub-journal">Harmful Algae</span>, 37, 133–141.
+        <span class="pub-if">IF 3.339</span>
+        <span class="pub-q1">Q1</span>
+        <span class="pub-badge">분야 상위 6.3%</span>
+      </div>
+
+      <p style="font-size:.75rem;color:var(--muted);margin-top:12px;font-family:sans-serif;text-align:right;">
+        <a href="https://scholar.google.com/citations?hl=ko&user=74LirFIAAAAJ" target="_blank" style="color:var(--accent);">Google Scholar에서 전체 목록 및 피인용 정보 보기 ↗</a>
       </p>
     </div>
 
